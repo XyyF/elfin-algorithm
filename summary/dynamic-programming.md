@@ -29,17 +29,7 @@
 
 穷举也需要按一定的方式去执行，所有需要描述问题结构的数学方程式
 
-```latex
-$$
-X(m,n)=
-\begin{cases}
-x(n),\\
-x(n-1),\\
-x(n+1)
-\end{cases}
-$$
-```
-
+![](https://tva1.sinaimg.cn/large/007S8ZIlgy1ghrairhehgj30bc020we9.jpg)
 
 
 ## 思路分析
