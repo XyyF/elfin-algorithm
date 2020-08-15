@@ -30,6 +30,7 @@
 穷举也需要按一定的方式去执行，所有需要描述问题结构的数学方程式
 
 ![](https://tva1.sinaimg.cn/large/007S8ZIlgy1ghrairhehgj30bc020we9.jpg)
+$$f(n)=\begin{cases} 1, & n=1,2\\ f(n-1) + f(n-2), & n > 2 \end{cases}$$
 
 
 ## 思路分析
