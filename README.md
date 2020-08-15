@@ -7,4 +7,4 @@
 
 ### 文件目录
 
-- 动态规划 dynamic-programming/
+- 动态规划 summary/dynamic-programming.md
