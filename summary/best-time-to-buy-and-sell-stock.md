@@ -126,4 +126,8 @@ dp[i - 1][j-1][0] => preUnHold
 ```
 
 ## 相关题目
-[123.best-time-to-buy-adn-sell-stock-iii]()
+- [121.best-time-to-buy-adn-sell-stock](https://github.com/XyyF/elfin-algorithm/blob/master/problems/121.best-time-to-buy-and-sell-stock.md)
+- [122.best-time-to-buy-adn-sell-stock-ii](https://github.com/XyyF/elfin-algorithm/blob/master/problems/122.best-time-to-buy-and-sell-stock-ii.md)
+- [123.best-time-to-buy-adn-sell-stock-iii](https://github.com/XyyF/elfin-algorithm/blob/master/problems/123.best-time-to-buy-and-sell-stock-iii.md)
+- [309.best-time-to-buy-adn-sell-stock-with-cooldown](https://github.com/XyyF/elfin-algorithm/blob/master/problems/309.best-time-to-buy-and-sell-stock-with-cooldown.md)
+- [714.best-time-to-buy-adn-sell-stock-with-transaction-fee](https://github.com/XyyF/elfin-algorithm/blob/master/problems/121.best-time-to-buy-and-sell-stock-with-transaction-fee.md)
