@@ -37,4 +37,7 @@ dp[i][j] = (s[i] === s[j]) && dp[i + 1][j - 1]
 ```
 ![](https://tva1.sinaimg.cn/large/007S8ZIlgy1ghtkl1lgisj30ha08iglo.jpg)
 
+## 优化
+[Manacher算法](https://github.com/XyyF/elfin-algorithm/blob/master/algorithm/manacher.md)
+
 ## 相关问题
