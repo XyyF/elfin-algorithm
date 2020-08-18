@@ -38,7 +38,7 @@ dp[i][j] = (s[i] === s[j]) && dp[i + 1][j - 1]
 ![](https://tva1.sinaimg.cn/large/007S8ZIlgy1ghtkl1lgisj30ha08iglo.jpg)
 
 ## 优化
-- 针对回文子串 [Manacher算法](https://github.com/XyyF/elfin-algorithm/blob/master/algorithm/manacher.md)
+- 针对回文子串 [CenterSpread算法](https://github.com/XyyF/elfin-algorithm/blob/master/algorithm/center-spread.md)
 
 ## 相关问题
 - [5.longest-palindromic-substring](https://github.com/XyyF/elfin-algorithm/blob/master/problems/5.longest-palindromic-substring.md)
