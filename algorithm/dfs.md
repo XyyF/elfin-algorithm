@@ -39,3 +39,5 @@ var lengthOfLIS = function(nums) {
     }
 };
 ```
+
+### 优化
