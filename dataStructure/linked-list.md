@@ -26,11 +26,21 @@
 前提：在某个已知的节点后，增删节点
 
 因为不需要考虑内存的连续性，我们只需要将改变 节点前后的后继指针next 的指向即可
-![](https://tva1.sinaimg.cn/large/007S8ZIlgy1gitnkxmtoaj30vq0i274p.jpg)
+> 在新增节点时，一定要注意顺序，应该优先将节点x.next指向节点q
 ```js
 // 在节点p后 新增 节点x
-p
+// p节点 -> q节点
+// p节点 -> x节点 -> q节点
+x.next = p.next
+p.next = x
+
+// 在节点p后 删除 节点x
+// p节点 -> x节点 -> q节点
+// p节点 -> q节点
+p.next = p.next.next
 ```
+
+![](https://tva1.sinaimg.cn/large/007S8ZIlgy1gitnkxmtoaj30vq0i274p.jpg)
 
 ### 低效的访问节点
 因为不是连续的内存空间，如果要访问某个节点，那么就需要从基地址向后遍历找到相应节点
@@ -40,6 +50,7 @@ p
 特殊的单向链表，尾节点的后继指针next不是指向null，而是指向首节点的内存块地址，这种首位链接的结构
 
 应用场景：具有环形数据结构特点时
+
 ![](https://tva1.sinaimg.cn/large/007S8ZIlgy1gitsw4cm56j30vq0b3mxb.jpg)
 
 ## 双向链表
