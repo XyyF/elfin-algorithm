@@ -11,7 +11,7 @@
 ```js
 // 单向链表节点结构
 {
-    data: 内存块数据,
+    element: 内存块数据,
     next: 指向下一个链表节点,
 }
 ```
@@ -35,24 +35,73 @@
 // 单向链表节点结构
 {
     prev: 指向上一个链表节点,
-    data: 内存块数据,
+    element: 内存块数据,
     next: 指向下一个链表节点,
 }
 ```
 ![](https://tva1.sinaimg.cn/large/007S8ZIlgy1gittc2w2mvj30vq0b3jrm.jpg)
 
 #### 双向循环链表
-同上
+同循环链表
 
 
 ## 链表的设计
+> 利用哨兵节点来解决边界问题
+在链表中，可以利用 head指针 来作为哨兵节点，不参与业务处理
+- 可以指定链表的基节点，作为入口查找节点
+- 为了在处理边界的时候，哨兵节点用以占位的作用，就不用额外处理边界的判断(特别是当链表容量过大的场景
+
+  ```js
+  // 针对空链表，新增一个节点
+  // [无哨兵节点] 需要单独的逻辑额外判断，这样，每个节点都会执行判断，当链表过大时的效率是极低的
+  if (head === null) head = newNode
+  // [有哨兵节点] 跟链表节点的逻辑一致
+  newNode.next = head.next
+  head.next = newNode
+
+  // 删除链表中的最后一个节点
+  // [无哨兵节点]
+  if (node.next === null) node = null
+  // [有哨兵节点]
+  node.next = node.next.next
+  ```
+
+#### Node类
+因为链表中的节点除了本身数据外，还存在前驱、后驱指针属性，所以需要单独封装
+
+Node类作为链表中的节点，提供节点的属性
+```js
+function Node(element) {
+    // 节点的数据
+    this.element = element
+    // 节点的后驱指针
+    this.next = null
+    // 节点的前驱指针 [双向链表使用]
+    this.prev = null
+}
+```
+
+#### LList类
+LList类作为链表中的容器，提供一系列的链表方法，和哨兵节点
+```js
+function LList() {
+    const head = Symbol('head')
+    this.head = new Node(head)
+    this.find = function() {}
+    this.insert = function() {}
+    this.remove = function() {}
+    this.display = function() {}
+}
+```
+
+// TODO
+
+
+
 
 ## 链表操作注意事项
 
 - 警惕指针丢失，插入节点时，注意操作顺序
-- 哨兵节点的应用
-
-
 
 ### 高效的后驱增删节点
 前提：在某个已知的节点后，增删节点
