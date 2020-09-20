@@ -91,19 +91,13 @@ function LList() {
     this.insert = function() {}
     this.remove = function() {}
     this.display = function() {}
+    // ...
 }
 ```
 
-// TODO
+[链表具体实现地址](https://github.com/XyyF/elfin-dataStructure/blob/master/main/linked-list/index.js)
 
-
-
-
-## 链表操作注意事项
-
-- 警惕指针丢失，插入节点时，注意操作顺序
-
-### 高效的后驱增删节点
+#### 高效的后驱增删节点
 前提：在某个已知的节点后，增删节点
 
 因为不需要考虑内存的连续性，我们只需要将改变 节点前后的后继指针next 的指向即可
@@ -125,13 +119,7 @@ p.next = p.next.next
 
 ![](https://tva1.sinaimg.cn/large/007S8ZIlgy1gitnkxmtoaj30vq0i274p.jpg)
 
-### 低效的访问节点
-因为不是连续的内存空间，如果要通过顺序(下标)访问某个节点，那么就需要从基地址向后遍历找到相应节点
-
-
-
-
-### 高效的前驱增删
+#### 高效的前驱增删
 前提：在某个已知的节点前，增删节点
 ```js
 // 已知节点q，在之前 新增 节点x
@@ -150,3 +138,6 @@ q.prev.prev.next = q
 q.prev = q.prev.prev
 ```
 > 同理，在新增节点时，一定要注意顺序，已知节点q，如果要拿到节点p，只能通过q.prev，那么就应该优先将节点p的相关指针处理好
+
+#### 低效的访问节点
+因为不是连续的内存空间，如果要通过顺序(下标)访问某个节点，那么就需要从基地址向后遍历找到相应节点
