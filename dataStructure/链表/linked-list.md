@@ -143,3 +143,16 @@ q.prev = q.prev.prev
 
 #### 低效的访问节点
 因为不是连续的内存空间，如果要通过顺序(下标)访问某个节点，那么就需要从基地址向后遍历找到相应节点
+
+## 链表小技巧
+
+#### 手动添加占位首节点
+如果没有占位首节点，有时候对链表进行遍历的时候，为了保证逻辑的一致性，可以手动添加一个占位首节点
+```js
+function(head) {
+    const llist = new ListNode()
+    llist.next = head
+}
+```
+
+[剑指Offer 18](https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/submissions/)
