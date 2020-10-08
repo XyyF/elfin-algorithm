@@ -155,4 +155,4 @@ function(head) {
 }
 ```
 
-[剑指Offer 18](https://github.com/XyyF/elfin-algorithm/blob/master/problems/剑指Offer 18.删除链表的节点.md)
+[剑指Offer 18](https://github.com/XyyF/elfin-algorithm/blob/master/problems/剑指Offer18.删除链表的节点.md)
