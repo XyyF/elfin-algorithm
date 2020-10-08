@@ -87,15 +87,17 @@ LList类作为链表中的容器，提供一系列的链表方法，和哨兵节
 function LList() {
     const head = Symbol('head')
     this.head = new Node(head)
-    this.find = function() {}
-    this.insert = function() {}
-    this.remove = function() {}
+    this.push = function() {}
+    this.pop = function() {}
+    this.shift = function() {}
+    this.unshift = function() {}
+    this.reverse = function() {}
     this.display = function() {}
     // ...
 }
 ```
 
-[链表具体实现地址](https://github.com/XyyF/elfin-dataStructure/blob/master/main/linked-list/index.js)
+[链表具体实现地址](https://github.com/XyyF/elfin-dataStructure/blob/master/src/linked-list/index.ts)
 
 #### 高效的后驱增删节点
 前提：在某个已知的节点后，增删节点
