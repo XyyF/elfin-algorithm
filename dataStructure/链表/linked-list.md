@@ -155,4 +155,4 @@ function(head) {
 }
 ```
 
-[剑指Offer 18](https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/submissions/)
+[剑指Offer 18](https://github.com/XyyF/elfin-algorithm/blob/master/problems/剑指Offer 18.删除链表的节点.md)
