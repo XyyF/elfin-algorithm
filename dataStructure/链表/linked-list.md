@@ -146,13 +146,20 @@ q.prev = q.prev.prev
 
 ## 链表小技巧
 
-#### 手动添加占位首节点
+#### Dummy node 假节点
 如果没有占位首节点，有时候对链表进行遍历的时候，为了保证逻辑的一致性，可以手动添加一个占位首节点
 ```js
 function(head) {
-    const llist = new ListNode()
-    llist.next = head
+    const dummy = new ListNode()
+    dummy.next = head
 }
 ```
 
 [剑指Offer 18](https://github.com/XyyF/elfin-algorithm/blob/master/problems/剑指Offer18.删除链表的节点.md)
+
+#### 快慢指针
+
+使用两个指针来遍历链表，一个fast指针，一个slow指针，通过一些技巧来达成目的
+
+
+[876.链表的中间节点](https://github.com/XyyF/elfin-algorithm/blob/master/problems/876.链表的中间节点.md)
