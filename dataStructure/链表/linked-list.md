@@ -165,3 +165,5 @@ function(head) {
 - [876.链表的中间节点](https://github.com/XyyF/elfin-algorithm/blob/master/problems/876.链表的中间节点.md)
 - [19.删除链表的倒数第N个节点](https://github.com/XyyF/elfin-algorithm/blob/master/problems/19.删除链表的倒数第N个节点.md)
 - [剑指Offer22.链表中倒数第k个节点](https://github.com/XyyF/elfin-algorithm/blob/master/problems/剑指Offer22.链表中倒数第k个节点.md)
+- [141.环形链表](https://github.com/XyyF/elfin-algorithm/blob/master/problems/141.环形链表.md)
+- [面试题02.07.链表相交](https://github.com/XyyF/elfin-algorithm/blob/master/problems/面试题02.07.链表相交.md)
