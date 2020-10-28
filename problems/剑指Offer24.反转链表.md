@@ -45,3 +45,6 @@ var reverseList = function(head) {
 ```
 
 [链表反转深入](https://github.com/XyyF/elfin-algorithm/blob/master/dataStructure/%E9%93%BE%E8%A1%A8/%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8.md)
+
+### 相同题目
+[206.反转链表](https://leetcode-cn.com/problems/reverse-linked-list/submissions/)
