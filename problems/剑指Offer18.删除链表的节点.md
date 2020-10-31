@@ -76,3 +76,6 @@ var deleteNode = function(head, val) {
     return llist.next
 };
 ```
+
+### 关联题目
+- [237.删除链表中的节点](https://github.com/XyyF/elfin-algorithm/blob/master/problems/237.删除链表中的节点.md)
