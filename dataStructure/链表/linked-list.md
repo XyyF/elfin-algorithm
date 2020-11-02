@@ -155,15 +155,17 @@ function(head) {
 }
 ```
 
-- [剑指Offer 18](https://github.com/XyyF/elfin-algorithm/blob/master/problems/剑指Offer18.删除链表的节点.md)
+- [剑指Offer18.删除链表的节点](https://github.com/XyyF/elfin-algorithm/blob/master/problems/剑指Offer18.删除链表的节点.md)
 
 #### 快慢指针
 
 使用两个指针来遍历链表，一个fast指针，一个slow指针，通过一些技巧来达成目的
 
 
-- [876.链表的中间节点](https://github.com/XyyF/elfin-algorithm/blob/master/problems/876.链表的中间节点.md)
 - [19.删除链表的倒数第N个节点](https://github.com/XyyF/elfin-algorithm/blob/master/problems/19.删除链表的倒数第N个节点.md)
-- [剑指Offer22.链表中倒数第k个节点](https://github.com/XyyF/elfin-algorithm/blob/master/problems/剑指Offer22.链表中倒数第k个节点.md)
+- [24.两两交换链表中的节点](https://github.com/XyyF/elfin-algorithm/blob/master/problems/24.两两交换链表中的节点.md)
 - [141.环形链表](https://github.com/XyyF/elfin-algorithm/blob/master/problems/141.环形链表.md)
+- [876.链表的中间节点](https://github.com/XyyF/elfin-algorithm/blob/master/problems/876.链表的中间节点.md)
+- [剑指Offer22.链表中倒数第k个节点](https://github.com/XyyF/elfin-algorithm/blob/master/problems/剑指Offer22.链表中倒数第k个节点.md)
+- [剑指Offer24.反转链表](https://github.com/XyyF/elfin-algorithm/blob/master/problems/剑指Offer24.反转链表.md)
 - [面试题02.07.链表相交](https://github.com/XyyF/elfin-algorithm/blob/master/problems/面试题02.07.链表相交.md)
