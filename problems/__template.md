@@ -2,7 +2,7 @@
 
 [讨论](/comments/) | [题解](/solution/)
 
-Tags:  | 
+Tags: 链表 | 链表
 
 > 题目详情
 
