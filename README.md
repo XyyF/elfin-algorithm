@@ -7,9 +7,10 @@
 
 ### 数据结构
 
-- 数组 dataStructure/array.md
-- 链表 dataStructure/linked-list.md
+- [数组](./dataStructure/array.md)
+- [链表](./dataStructure/linked-list.md)
 
 ### 文件目录
 
-- 动态规划 summary/dynamic-programming.md
+- [动态规划](./algorithm/dynamic-programming.md)
+- [排序算法](./algorithm/排序/冒泡排序.md)
