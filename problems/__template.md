@@ -1,6 +1,6 @@
 ## [编号. 题目]()
 
-[讨论](/comments/) | [题解](/solution/)
+[讨论](comments/) | [题解](solution/)
 
 Tags: 链表 | 链表
 
