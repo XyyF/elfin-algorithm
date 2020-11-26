@@ -169,3 +169,7 @@ function(head) {
 - [剑指Offer22.链表中倒数第k个节点](https://github.com/XyyF/elfin-algorithm/blob/master/problems/剑指Offer22.链表中倒数第k个节点.md)
 - [剑指Offer24.反转链表](https://github.com/XyyF/elfin-algorithm/blob/master/problems/剑指Offer24.反转链表.md)
 - [面试题02.07.链表相交](https://github.com/XyyF/elfin-algorithm/blob/master/problems/面试题02.07.链表相交.md)
+
+#### 链表排序: 归并排序
+
+最适合链表的排序方式：[归并排序](../../algorithm/排序/归并排序.md)
