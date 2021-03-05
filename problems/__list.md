@@ -32,6 +32,7 @@
 - [303.区域和检索-数组不可变](https://leetcode-cn.com/problems/range-sum-query-immutable/)
 - [309.best-time-to-buy-and-sell-stock-with-cooldown](./309.best-time-to-buy-and-sell-stock-with-cooldown.md)
 - [322.零钱兑换](https://leetcode-cn.com/problems/coin-change/)
+- [328.奇偶链表](https://leetcode-cn.com/problems/odd-even-linked-list/)
 - [338.比特位计数](https://leetcode-cn.com/problems/counting-bits/)
 - [382.链表随机节点](./382.链表随机节点.md)
 - [491.递增子序列](https://leetcode-cn.com/problems/increasing-subsequences/)
@@ -60,6 +61,7 @@ https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-di
 - [剑指Offer62.圆圈中最后剩下的数字](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/)
 
 - [面试题02.04.分割链表](https://leetcode-cn.com/problems/partition-list-lcci/submissions/)
+- [面试题02.06.回文链表](https://leetcode-cn.com/problems/palindrome-linked-list-lcci/)
 - [面试题02.07.链表相交](./面试题02.07.链表相交.md)
 - [面试题08.01.三步问题](https://leetcode-cn.com/problems/three-steps-problem-lcci/)
 - [面试题16.17.连续数列](https://leetcode-cn.com/problems/contiguous-sequence-lcci/)
