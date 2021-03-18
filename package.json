@@ -1,0 +1,19 @@
+{
+  "name": "elfin-algorithm",
+  "version": "1.0.0",
+  "description": "收集算法研习之路的总结收录，\"路漫漫其修远兮，吾将上下而求索\" -- By Me, Enjoy!",
+  "main": "index.js",
+  "scripts": {
+    "listCreate": "node ./problems/__listCreate.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XyyF/elfin-algorithm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XyyF/elfin-algorithm/issues"
+  },
+  "homepage": "https://github.com/XyyF/elfin-algorithm#readme"
+}
