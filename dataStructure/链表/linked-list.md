@@ -22,7 +22,7 @@
 - 尾节点：链表中最后一个节点，后继指针指向 null
 
 #### 循环链表
-特殊的单向链表，尾节点的后继指针next不是指向null，而是指向首节点的内存块地址，这种首位链接的结构
+特殊的单向链表，尾节点的后继指针next不是指向null，而是指向首节点的内存块地址，这种首尾链接的结构
 
 应用场景：具有环形数据结构特点时
 
@@ -46,7 +46,7 @@
 
 
 ## 链表的设计
-> 利用哨兵节点来解决边界问题
+> 利用【哨兵节点】来解决边界问题
 在链表中，可以利用 head指针 来作为哨兵节点，不参与业务处理
 - 可以指定链表的基节点，作为入口查找节点
 - 为了在处理边界的时候，哨兵节点用以占位的作用，就不用额外处理边界的判断(特别是当链表容量过大的场景
@@ -148,30 +148,60 @@ q.prev = q.prev.prev
 
 #### Dummy node 假节点
 如果没有占位首节点，有时候对链表进行遍历的时候，为了保证逻辑的一致性，可以手动添加一个占位首节点
+> 适用于大部分场景
 ```js
 function(head) {
     const dummy = new ListNode()
     dummy.next = head
 }
 ```
-
+- [203.移除链表元素](https://leetcode-cn.com/problems/remove-linked-list-elements/)
+- [237.删除链表中的节点](https://leetcode-cn.com/problems/delete-node-in-a-linked-list/)
 - [剑指Offer18.删除链表的节点](https://github.com/XyyF/elfin-algorithm/blob/master/problems/剑指Offer18.删除链表的节点.md)
 
 #### 快慢指针
+在单链表中，使用两个指针来遍历，一个fast指针，一个slow指针，在遍历链表的同时：
+- 反转链表
+- 判断是否有环
+- 找到链表中点，将链表分割为两个链表
 
-使用两个指针来遍历链表，一个fast指针，一个slow指针，通过一些技巧来达成目的
+- [61.旋转链表](https://leetcode-cn.com/problems/rotate-list/)
+- [86.分隔链表](https://leetcode-cn.com/problems/partition-list/)
+- [92.反转链表II](https://leetcode-cn.com/problems/reverse-linked-list-ii/)
+- [141.环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)
+- [142.环形链表II](https://leetcode-cn.com/problems/linked-list-cycle-ii/)
+- [160.相交链表](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)
+- [206.反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
+- [234.回文链表](https://leetcode-cn.com/problems/palindrome-linked-list/)
+- [328.奇偶链表](https://leetcode-cn.com/problems/odd-even-linked-list/)
+- [876.链表的中间结点](https://leetcode-cn.com/problems/middle-of-the-linked-list/)
+- [1721.交换链表中的节点](https://leetcode-cn.com/problems/swapping-nodes-in-a-linked-list/)
+- [剑指Offer06.从尾到头打印链表](https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/)
+- [剑指Offer22.链表中倒数第k个节点](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)
+- [剑指Offer24.反转链表](https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof/)
+- [剑指Offer52.两个链表的第一个公共节点](https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/)
+- [面试题02.04.分割链表](https://leetcode-cn.com/problems/partition-list-lcci/)
+- [面试题02.06.回文链表](https://leetcode-cn.com/problems/palindrome-linked-list-lcci/)
+- [面试题02.07.链表相交](https://leetcode-cn.com/problems/intersection-of-two-linked-lists-lcci/)
 
+## 链表的实际应用
 
-- [19.删除链表的倒数第N个节点](https://github.com/XyyF/elfin-algorithm/blob/master/problems/19.删除链表的倒数第N个节点.md)
-- [24.两两交换链表中的节点](https://github.com/XyyF/elfin-algorithm/blob/master/problems/24.两两交换链表中的节点.md)
-- [141.环形链表](https://github.com/XyyF/elfin-algorithm/blob/master/problems/141.环形链表.md)
-- [876.链表的中间节点](https://github.com/XyyF/elfin-algorithm/blob/master/problems/876.链表的中间节点.md)
-- [剑指Offer22.链表中倒数第k个节点](https://github.com/XyyF/elfin-algorithm/blob/master/problems/剑指Offer22.链表中倒数第k个节点.md)
-- [剑指Offer24.反转链表](https://github.com/XyyF/elfin-algorithm/blob/master/problems/剑指Offer24.反转链表.md)
-- [面试题02.07.链表相交](https://github.com/XyyF/elfin-algorithm/blob/master/problems/面试题02.07.链表相交.md)
+#### 多链表合并
+运用动态规划的思路，两两依次合并链表（一个链表也可以拆分为两个链表）
+
+- [21.合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/)
+- [23.合并K个升序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/)
+- [143.重排链表](https://leetcode-cn.com/problems/reorder-list/)
+- [148.排序链表](https://leetcode-cn.com/problems/sort-list/)
+- [1669.合并两个链表](https://leetcode-cn.com/problems/merge-in-between-linked-lists/)
+- [剑指Offer25.合并两个排序的链表](https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/)
 
 #### 链表排序: 归并排序
 
 最适合链表的排序方式：[归并排序](../../algorithm/排序/归并排序.md)
 
-## 链表的实际应用
+#### 其他
+- [382.链表随机节点](https://leetcode-cn.com/problems/linked-list-random-node/)
+- [725.分隔链表](https://leetcode-cn.com/problems/split-linked-list-in-parts/)
+- [剑指Offer35.复杂链表的复制](https://leetcode-cn.com/problems/fu-za-lian-biao-de-fu-zhi-lcof/)
+- [面试题02.05.链表求和](https://leetcode-cn.com/problems/sum-lists-lcci/)
