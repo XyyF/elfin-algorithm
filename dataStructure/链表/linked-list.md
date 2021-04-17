@@ -196,9 +196,10 @@ function(head) {
 - [1669.合并两个链表](https://leetcode-cn.com/problems/merge-in-between-linked-lists/)
 - [剑指Offer25.合并两个排序的链表](https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/)
 
-#### 链表排序: 归并排序
+#### 链表排序
 
 最适合链表的排序方式：[归并排序](../../algorithm/排序/归并排序.md)
+[插入排序](https://leetcode-cn.com/problems/insertion-sort-list/solution/)
 
 #### 其他
 - [382.链表随机节点](https://leetcode-cn.com/problems/linked-list-random-node/)
