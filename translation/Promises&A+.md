@@ -22,14 +22,14 @@
 ### 2.1 Promise状态
 一个promise必须处于以下三种状态之一：等待中(pending)、已完成(fulfilled)或已拒绝(rejected)。
 
-2.1.1 当一个promise等待中时:
-&nbsp;&nbsp;&nbsp;&nbsp;2.1.1.1 可能会转换为已完成或已拒绝状态。
-2.1.2 当一个promise已完成时：
-&nbsp;&nbsp;&nbsp;&nbsp;2.1.2.1 一定不会改变为其他任何状态；
-&nbsp;&nbsp;&nbsp;&nbsp;2.1.2.2 一定会有一个绝不能改变的值。
-2.1.3 当一个promise已拒绝时：
-&nbsp;&nbsp;&nbsp;&nbsp;2.1.3.1 一定不会改变为其他任何状态；
-&nbsp;&nbsp;&nbsp;&nbsp;2.1.3.2 一定会有一个绝不能改变的原因值。
+2.1.1 当一个promise等待中时:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.1.1 可能会转换为已完成或已拒绝状态。<br/>
+2.1.2 当一个promise已完成时：<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.2.1 一定不会改变为其他任何状态；<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.2.2 一定会有一个绝不能改变的值。<br/>
+2.1.3 当一个promise已拒绝时：<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.3.1 一定不会改变为其他任何状态；<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.3.2 一定会有一个绝不能改变的原因值。<br/>
 
 在此，"绝不能改变"是指不变的身份(即===)，但并不表示深层次的不变性。
 
@@ -40,29 +40,29 @@
 ```js
 promise.then(onFulfilled, onRejected)
 ```
-2.2.1 onFulfilled和onRjected都是可选参数：
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.1.1 如果onFulfilled不是一个函数，那么将被忽略；
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.1.2 如果onRejected不是一个函数，那么将被忽略。
-2.2.2 如果onFulfilled是一个函数：
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.2.1 必须在promise是已完成状态后调用，它的第一个参数是该promise的最终值；
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.2.2 在promise状态为已完成之前，不能调用onFulfilled；
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.2.3 它不能被多次调用。
-2.2.3 如果onRejected是一个函数：
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.3.1 必须在promise是已拒绝状态后调用，它的第一个参数是该promise的原因值；
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.3.2 在promise状态为已拒绝之前，不能调用onRejected；
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.3.3 它不能被多次调用。
-2.2.4 在执行下上文堆栈仅包含平台代码之前，不能调用onFullfilled或onRejected。[3.1](#notes)
-2.2.5 onFullfilled和onRejected必须作为函数调用(即没有this值)。<span style="color: red;">(PS: 大多浏览器实现，this会指向window)</span>
-2.2.6 同一promise上可能会多次调用then方法。<span style="color: red;">(PS: 不是链式调用的意思)</span>
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.6.1 如果promise状态过渡到已完成，所有的onFulfilled回调将会按照他们定义的顺序进行执行；
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.6.2 如果promise状态过渡到已拒绝，所有的onRejected回调将会按照他们定义的顺序进行执行。
-2.2.7 then方法必须返回一个promise[3.3](#notes)
+2.2.1 onFulfilled和onRjected都是可选参数：<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.1.1 如果onFulfilled不是一个函数，那么将被忽略；<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.1.2 如果onRejected不是一个函数，那么将被忽略。<br/>
+2.2.2 如果onFulfilled是一个函数：<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.2.1 必须在promise是已完成状态后调用，它的第一个参数是该promise的最终值；<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.2.2 在promise状态为已完成之前，不能调用onFulfilled；<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.2.3 它不能被多次调用。<br/>
+2.2.3 如果onRejected是一个函数：<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.3.1 必须在promise是已拒绝状态后调用，它的第一个参数是该promise的原因值；<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.3.2 在promise状态为已拒绝之前，不能调用onRejected；<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.3.3 它不能被多次调用。<br/>
+2.2.4 在执行下上文堆栈仅包含平台代码之前，不能调用onFullfilled或onRejected。[3.1](#notes)<br/>
+2.2.5 onFullfilled和onRejected必须作为函数调用(即没有this值)。<span style="color: red;">(PS: 大多浏览器实现，this会指向window)</span><br/>
+2.2.6 同一promise上可能会多次调用then方法。<span style="color: red;">(PS: 不是链式调用的意思)</span><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.6.1 如果promise状态过渡到已完成，所有的onFulfilled回调将会按照他们定义的顺序进行执行；<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.6.2 如果promise状态过渡到已拒绝，所有的onRejected回调将会按照他们定义的顺序进行执行。<br/>
+2.2.7 then方法必须返回一个promise[3.3](#notes)<br/>
 ```js
 promise2 = promise1.then(onFulfilled, onRejected);
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.7.1 如果onFulfilled或onRejected返回了一个值x，那么将会返回 Promise.resolve(x)【TODO】；
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.7.2 如果onFulfilled或onRejected抛出了一个错误e，那么将会返回 Promise.rejected(e)【TODO】；
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.7.3 如果onFulfilled不是一个函数，并且promise1状态为已完成，那么返回的promise2状态为已完成并且最终值等同promise1；
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.7.4 如果onRejected不是一个函数，并且promise1状态为已拒绝，那么返回的promise2状态为已拒绝并且原因值等同promise1；
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.7.1 如果onFulfilled或onRejected返回了一个值x，那么将会返回 Promise.resolve(x)【TODO】；<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.7.2 如果onFulfilled或onRejected抛出了一个错误e，那么将会返回 Promise.rejected(e)【TODO】；<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.7.3 如果onFulfilled不是一个函数，并且promise1状态为已完成，那么返回的promise2状态为已完成并且最终值等同promise1；<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.7.4 如果onRejected不是一个函数，并且promise1状态为已拒绝，那么返回的promise2状态为已拒绝并且原因值等同promise1；<br/>
 
 ### 2.3 Promise执行程序
