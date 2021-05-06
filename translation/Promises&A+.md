@@ -12,11 +12,11 @@
 最后，核心的Promises/A+规范不涉及如何创建、执行或拒绝Promise，而是选择专注于提供可互操作的then方法，伴随规范中的未来工作可能涉及这些主题。
 
 ## 1. 目录
-1.1 "Promise"是具有then方法的对象或函数，其行为符合此规范。
-1.2 "thenable"是定义then方法的对象或函数。
-1.3 "value"是任何合法的JavaScript值（包括未定义、可实现的或者Promise）。
-1.4 "exception"是使用throw语句抛出的值。
-1.5 "reason"是表明拒绝Promise的原因的值。
+1.1 "Promise"是具有then方法的对象或函数，其行为符合此规范。<br/>
+1.2 "thenable"是定义then方法的对象或函数。<br/>
+1.3 "value"是任何合法的JavaScript值（包括未定义、可实现的或者Promise）。<br/>
+1.4 "exception"是使用throw语句抛出的值。<br/>
+1.5 "reason"是表明拒绝Promise的原因的值。<br/>
 
 ## 2. 需求
 ### 2.1 Promise状态
