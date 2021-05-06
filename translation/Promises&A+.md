@@ -1,7 +1,7 @@
 # Promises/A+
 [原文地址](https://promisesaplus.com/#point-49)
 
-一个开放的标准，用于实现可交互的JavaScript Promises -- by implementers, for implementers.
+这是一个开放的标准，用于实现可交互的JavaScript Promises -- by implementers, for implementers.
 
 一个Promsie代表异步操作的最终结果。要与Promise交互的主要方式是通过 then 方法，该方法注册回调以接收Promise完成的最终值或Promise无法完成的原因值。
 
