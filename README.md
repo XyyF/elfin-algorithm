@@ -15,3 +15,7 @@
 - [动态规划](./algorithm/dynamic-programming.md)
 - [排序算法](./algorithm/排序/冒泡排序.md)
 - [中心扩散算法](./algorithm/center-spread.md)
+
+### 书写规范
+1. 主标题 \#\# 副标题 \#\#\#
+2. 灵活运用 `标识` 提升阅读体验

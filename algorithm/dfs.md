@@ -1,15 +1,31 @@
-# dfs 回溯算法
+## DFS 深度优先搜索
 
-## 场景
+`深度优先搜索`（DFS）是用于 在树/图中遍历/搜索 的另一种重要算法。了解[`栈`](./../../dataStructure/stack/index.md)能更好的帮助理解，深度遍历再回溯的特性和栈LIFO的特性十分贴合。
+
+### 场景
 
 针对树形结构场景，优先进行深度优先遍历，再不断回溯状态，直至遍历完整棵树
 ![](https://tva1.sinaimg.cn/large/007S8ZIlgy1ghzn9zywbtj31kl0u0dki.jpg)
 
-## 推导
+### 递归
+在进行递归的时候，我们并没有显式的使用栈，而是使用语言提供的隐式栈。
+```java
+/*
+ * Return true if there is a path from cur to target.
+ */
+boolean DFS(Node cur, Node target, Set<Node> visited) {
+    return true if cur is target;
+    for (next : each neighbor of cur) {
+        if (next is not in visited) {
+            add next to visted;
+            return true if DFS(next, target, visited) == true;
+        }
+    }
+    return false;
+}
+```
 
-### 状态
-
-## 代码实现
+### 代码实现
 ```js
 /**
  * @param {number[]} nums
