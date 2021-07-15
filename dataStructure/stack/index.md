@@ -13,3 +13,4 @@
 - [739.每日温度](https://leetcode-cn.com/problems/daily-temperatures/description/)
 - [150.逆波兰表达式求值](https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/)
 - [200.岛屿数量](https://leetcode-cn.com/problems/number-of-islands/)
+- [494.目标和](https://leetcode-cn.com/problems/target-sum/)
