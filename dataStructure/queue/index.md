@@ -17,7 +17,7 @@
 ![image from leetcode](https://pic.leetcode-cn.com/Figures/circular_queue/Slide51.png)
 
 ### 队列的实际应用
-广度优先搜索，优先遍历下一层级的子树，再推出根节点，再依次遍历；
+广度优先搜索BFS，优先遍历下一层级的子树，再推出根节点，再依次遍历；
 ![image from leetcode](https://pic.leetcode-cn.com/Figures/bfs/Slide01.png)
 ```
 Queue:
