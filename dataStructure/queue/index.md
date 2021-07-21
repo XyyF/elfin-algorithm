@@ -33,3 +33,5 @@ FG ->
 G ->
 空
 ```
+甚至可以考虑双向BFS的思路：
+- [752.打开转盘锁](https://leetcode-cn.com/problems/open-the-lock/)
