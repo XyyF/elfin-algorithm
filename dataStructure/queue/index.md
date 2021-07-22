@@ -35,3 +35,4 @@ G ->
 ```
 甚至可以考虑双向BFS的思路：
 - [752.打开转盘锁](https://leetcode-cn.com/problems/open-the-lock/)
+- [279.完全平方数](https://leetcode-cn.com/problems/perfect-squares/)
