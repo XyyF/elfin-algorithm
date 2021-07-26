@@ -2,9 +2,9 @@
 
 [讨论](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/comments/) | [题解](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/solution/)
 
-Tags: 栈
+Tags: 栈 | 队列
 
-> 用两个栈实现一个队列。队列的声明如下，请实现它的两个函数 appendTail 和 deleteHead ，分别完成在队列尾部插入整数和在队列头部删除整数的功能。(若队列中没有元素，deleteHead 操作返回 -1 )
+> 用两个栈实现一个队列。队列的声明如下，请实现它的两个函数 appendTail 和 deleteHead ，分别完成在队列尾部插入整数和在队列头部删除整数的功能。(若队列中没有元素，deleteHead 操作返回 -1)
 
 ```js
 示例 1：
@@ -29,7 +29,7 @@ Tags: 栈
 使用两个栈来模拟先进先出的队列，那么一个栈A模拟队列进，一个栈B模拟队列出；
 
 模拟队列进很简单，那么队列出呢？因为栈是先进先出的，如果想要出元素，那么就要把元素放在栈顶；为了保证效率，有以下几点可以考虑：
-1. 当执行deleteHead时再将栈A的元素转移至栈B；（）
+1. 当执行deleteHead时再将栈A的元素转移至栈B；
 2. 当栈B中存在元素时，无需转移；
 3. 模拟的队列可以看作：栈A顶 -> 栈A底 -> 栈B底 -> 栈B顶；
 ```js
@@ -78,11 +78,4 @@ CQueue.prototype.deleteHead = function() {
     }
     return -1;
 };
-
-/**
- * Your CQueue object will be instantiated and called as such:
- * var obj = new CQueue()
- * obj.appendTail(value)
- * var param_2 = obj.deleteHead()
- */
 ```
