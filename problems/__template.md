@@ -3,6 +3,7 @@
 [讨论](comments/) | [题解](solution/)
 
 Tags: 链表 | 链表
+Subtags: 反转 | 快慢指针
 
 > 题目详情
 
