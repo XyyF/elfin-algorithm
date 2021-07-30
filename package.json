@@ -4,6 +4,7 @@
   "description": "收集算法研习之路的总结收录，\"路漫漫其修远兮，吾将上下而求索\" -- By Me, Enjoy!",
   "main": "index.js",
   "scripts": {
+    "tagCreate": "node ./problems/summary/tag.js",
     "listCreate": "node ./problems/__listCreate.js"
   },
   "repository": {
