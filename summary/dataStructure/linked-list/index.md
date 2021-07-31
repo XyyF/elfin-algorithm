@@ -164,6 +164,8 @@ function(head) {
 - [203.移除链表元素](https://leetcode-cn.com/problems/remove-linked-list-elements/)
 - [237.删除链表中的节点](https://leetcode-cn.com/problems/delete-node-in-a-linked-list/)
 - [剑指Offer18.删除链表的节点](https://github.com/XyyF/elfin-algorithm/blob/master/problems/剑指Offer18.删除链表的节点.md)
+- [83.删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)
+- [82.删除排序链表中的重复元素 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/)
 
 ### 快慢指针
 在单链表中，使用两个指针来遍历，一个fast指针，一个slow指针，在遍历链表的同时：
@@ -188,8 +190,6 @@ function(head) {
 - [面试题02.04.分割链表](https://leetcode-cn.com/problems/partition-list-lcci/)
 - [面试题02.06.回文链表](https://leetcode-cn.com/problems/palindrome-linked-list-lcci/)
 - [面试题02.07.链表相交](https://leetcode-cn.com/problems/intersection-of-two-linked-lists-lcci/)
-
-## 链表的实际应用
 
 ### 多链表合并
 运用动态规划的思路，两两依次合并链表（一个链表也可以拆分为两个链表）
