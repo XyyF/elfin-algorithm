@@ -7,8 +7,10 @@
 
 ### 数据结构
 
-- [数组](./dataStructure/array.md)
-- [链表](./dataStructure/linked-list.md)
+- [数组](./summary/dataStructure/array.md)
+- [链表](./summary/dataStructure/linked-list/index.md)
+- [栈](./summary/dataStructure/stack.md)
+- [队列](./summary/dataStructure/queue.md)
 
 ### 算法
 
