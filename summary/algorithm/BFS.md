@@ -9,3 +9,18 @@
 不用于DFS:
 1. DFS，递归过程中，栈是隐式存在的，在BFS中，队列的数据结构是需要显式创建的
 2. BFS可以采用双向遍历，减轻内存压力；
+
+### 伪代码
+通过一个队列，在while循环中直到队列为空，代表遍历完成；
+```js
+function traverse(root) {
+    if (root === null) return;
+    const queue = [root];
+    while(queue.length >= 0) {
+        const node = queue.shift();
+        console.log(node.val);
+        if (root.left) queue.push(root.left);
+        if (root.right) queue.push(root.right);
+    }
+}
+```
