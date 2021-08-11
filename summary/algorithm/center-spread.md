@@ -1,12 +1,12 @@
-# CenterSpread 中心扩散算法
+## CenterSpread 中心扩散算法
 
-## 场景
+### 场景
 
-针对回文问题，[传统动态规划解法](https://github.com/XyyF/elfin-algorithm/blob/master/summary/palindromic.md)，以遍历每个子串查找，时间复杂度达到了 O(n^2)
+针对回文问题，[传统动态规划解法](https://github.com/XyyF/elfin-algorithm/blob/master/summary/palindromic.md)，以遍历每个子串查找，时间复杂度达到了 O(n^2)，空间复杂度达到了 O(n^2)
 
-中心扩散算法思路，通过一些技巧，将遍历算法时间复杂度降低到了 O(n)
+中心扩散算法思路，通过一些技巧，将遍历算法空间复杂度降低到了 O(1)
 
-## 推导
+### 推导
 中心扩散法的思路是：遍历字符串每一个索引，以这个索引为中心，利用"回文串"中心对称的特点，往两边扩散，看最多能扩散多远
 
 以中心向外扩散的思路，需要注意回文的长度
@@ -15,10 +15,10 @@
 
 该方法的优势在于，从中心开始扩散，扩散时遇到了不是回文，及时止损，停止遍历
 
-### 状态
+#### 状态
 从某一个中心开始扩散，并不需要关心中心是哪儿，只需要明确当前扩散字符串的起始下标
 
-### 实现
+#### 实现
 ```js
 /**
  * @param {string} s
@@ -45,3 +45,8 @@ var longestPalindrome = function(s) {
     return ''
 };
 ```
+
+### 举一反三
+
+1. 全对称字符串，形如 abcdefghijkjihgfedcba；
+2. 全回文字符串，形如 aaaaaaaaaaaaaaaaaaaaa；
