@@ -13,7 +13,7 @@
 
 下图说明了两台连接到 Internet 的计算机；您的 IP 地址为 1.2.3.4 的计算机和另一台 IP 地址为 5.6.7.8 的计算机。互联网被表示为介于两者之间的抽象对象。 （随着本文的推进，以及互联网细节的曝光，下图的互联网部分将进行多次解释和重绘。）
 
-![](./images/ruswp_diag1.gif)
+<img src="./images/ruswp_diag1.gif" style="background: #fff" />
 
 如果您通过 Internet 服务提供商 (ISP) 连接到 Internet，通常会在拨入会话期间为您分配一个临时 IP 地址。如果您从局域网 (LAN) 连接到 Internet，您的计算机可能有一个永久 IP 地址，或者它可能从 DHCP（动态主机配置协议）服务器获得一个临时地址。在任何情况下，如果您连接到 Internet，您的计算机就有一个唯一的 IP 地址。
 
@@ -34,7 +34,7 @@ Internet协议层(IP层)  |  IP通过IP地址将数据包导向特定的计算�
 
 接下来让我们一路跟随着消息“Hello computer 5.6.7.8!”从我们的计算机到 IP 地址为 5.6.7.8 的计算机，它会发生怎样的事情：
 
-![](./images/ruswp_diag2.gif)
+<img src="./images/ruswp_diag2.gif" style="background: #fff" />
 
 1、该消息将从您计算机上协议堆栈的顶部开始，并向下执行。
 
@@ -58,7 +58,7 @@ Internet协议层(IP层)  |  IP通过IP地址将数据包导向特定的计算�
 
 所以现在您知道了数据包是如何通过 Internet 从一台计算机传输到另一台计算机的。但介于两者之间的是什么？究竟是什么构成了互联网？我们再看另外一张图：
 
-![](./images/ruswp_diag3.gif)
+<img src="./images/ruswp_diag3.gif" style="background: #fff" />
 
 我们看见比图 1 更详细的绘制。可能我们很容易想到通过电话网络连接到互联网服务提供商的物理连接方式，但除此之外可能需要一些额外的解释。
 
