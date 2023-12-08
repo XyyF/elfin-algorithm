@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const tagJson = {
-  "unkown": [],
+  "nosetting": [],
 };
 
 deep('../normal');
@@ -16,15 +16,18 @@ function deep(temPath) {
     const name = list[i];
     const contexts = fs.readFileSync(path.join(__dirname, temPath, name), 'utf8').split('\n');
     const tagLine = contexts.find(e => e.startsWith('Tags:'));
+
     if (tagLine) {
       const tags = tagLine.slice(5).replace(/[\r\s]/g, '').split('|');
-      tags.forEach((tag) => {
-        if (!tagJson[tag]) tagJson[tag] = [];
-        tagJson[tag].push(temPath + '/' + name);
-      });
-    } else {
-      tagJson.unkown.push(temPath + '/' + name);
+      if (tags && tags.length > 0) {
+        tags.forEach((tag) => {
+          if (!tagJson[tag]) tagJson[tag] = [];
+          tagJson[tag].push(temPath + '/' + name);
+        });
+        continue;
+      }
     }
+    tagJson.nosetting.push(temPath + '/' + name);
   }
 }
 

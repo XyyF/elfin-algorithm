@@ -1,8 +1,5 @@
 {
-	"unkown": [
-		"../normal/121.best-time-to-buy-and-sell-stock.md",
-		"../normal/122.best-time-to-buy-and-sell-stock-ii.md",
-		"../normal/123.best-time-to-buy-and-sell-stock-iii.md",
+	"nosetting": [
 		"../normal/141.环形链表.md",
 		"../normal/165.compare-version-numbers.md",
 		"../normal/188.best-time-to-buy-and-sell-stock-iv.md",
@@ -19,6 +16,16 @@
 		"../剑指Offer/剑指Offer22.链表中倒数第k个节点.md",
 		"../剑指Offer/剑指Offer24.反转链表.md",
 		"../面试题/面试题02.07.链表相交.md"
+	],
+	"动态规划": [
+		"../normal/121.best-time-to-buy-and-sell-stock.md",
+		"../normal/122.best-time-to-buy-and-sell-stock-ii.md",
+		"../normal/123.best-time-to-buy-and-sell-stock-iii.md",
+		"../normal/494.目标和.md",
+		"../normal/[难]1955.统计特殊子序列的数目.md"
+	],
+	"贪心": [
+		"../normal/122.best-time-to-buy-and-sell-stock-ii.md"
 	],
 	"链表": [
 		"../normal/133.克隆图.md",
@@ -43,10 +50,25 @@
 		"../normal/133.克隆图.md",
 		"../normal/200.岛屿数量.md",
 		"../normal/494.目标和.md",
-		"../normal/98.验证二叉搜索树.md"
+		"../normal/98.验证二叉搜索树.md",
+		"../normal/[难]124.二叉树中的最大路径和.md"
 	],
-	"[归并排序](../algorithm/排序/归并排序.md)": [
+	"反转": [
+		"../normal/143.重排链表.md"
+	],
+	"快慢指针": [
+		"../normal/143.重排链表.md",
+		"../normal/148.排序链表.md",
+		"../normal/61.旋转链表.md"
+	],
+	"归并排序": [
 		"../normal/148.排序链表.md"
+	],
+	"合并升序链表": [
+		"../normal/148.排序链表.md"
+	],
+	"逆波兰表达式": [
+		"../normal/150.逆波兰表达式求值.md"
 	],
 	"栈": [
 		"../normal/155.最小栈.md",
@@ -61,13 +83,40 @@
 		"../normal/279.完全平方数.md",
 		"../normal/752.打开转盘锁.md"
 	],
+	"递归法": [
+		"../normal/21.合并两个有序链表.md"
+	],
 	"队列": [
 		"../normal/225.用队列实现栈.md",
 		"../normal/279.完全平方数.md",
 		"../normal/752.打开转盘锁.md",
 		"../剑指Offer/剑指Offer09.用两个栈实现队列.md"
 	],
-	"动态规划": [
+	"分治法": [
+		"../normal/23.合并K个升序链表.md"
+	],
+	"抽样": [
+		"../normal/382.链表随机节点.md"
+	],
+	"01背包": [
 		"../normal/494.目标和.md"
+	],
+	"快速幂双指针": [
+		"../normal/633.平方数之和.md"
+	],
+	"反转链表": [
+		"../normal/92.反转链表ii.md"
+	],
+	"树": [
+		"../normal/98.验证二叉搜索树.md"
+	],
+	"二叉树": [
+		"../normal/[难]124.二叉树中的最大路径和.md"
+	],
+	"空间换时间": [
+		"../剑指Offer/剑指Offer30.包含min函数的栈.md"
+	],
+	"深拷贝": [
+		"../剑指Offer/剑指Offer35.复杂链表的复制.md"
 	]
 }
